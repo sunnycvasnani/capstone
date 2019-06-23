@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Register</h1>
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="First Name" #first_name>
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Last Name" #last_name>
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Email" #email>
+
+      <label for="password">Password</label>
+      <input type="text" id="password" name="password" placeholder="Password" #password>
+
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" placeholder="Phone" #phone>
+
+      <button (click)=submitRegister(first_name.value,last_name.value,email.value,password.value,phone.value)>Submit</button>
+      <a href="../login">If you're already a member, sign in here!</a>
+    </form>
+  </div>

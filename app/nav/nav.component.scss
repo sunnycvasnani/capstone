@@ -1,0 +1,98 @@
+$header-font-color: rgb(100,100,100);
+$nav-font-color: rgb(255,255,255);
+$header-bg-color: rgb(230,230,230);
+$nav-bg-color: rgb(151, 228, 228);
+$nav-font-color: black;
+
+
+header {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    font-family: sans-serif;
+    padding-left:50px;
+
+    #headerlogos {
+        display: flex !important;
+
+        img {
+            margin: 0px 5px;
+            height: 200px !important;
+            width: 400px !important; 
+        }
+
+        .dividers {
+            width: 1px;
+            background-color: $header-font-color;
+        }
+    }
+
+    #contact-info {
+        display: flex !important;
+        flex-wrap: wrap !important;
+
+        p {
+            margin: 0px 20px 0px 0px;
+        }
+    }
+}
+
+nav {
+    display: flex;
+    height: 50px;
+    width: 100vw;
+    font-size: 12px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(151, 228, 228);
+    font-weight: bold;
+
+    div{
+        ul{
+            list-style-type: none;
+            li{
+                display:inline;
+                padding:20px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    a {
+        color: $nav-font-color;
+        transition: all .2s ease;
+        text-decoration: none !important;
+    }
+
+    a:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+i{
+    padding-right: 5px;
+}
+
+.title{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.navbar{
+    padding-top: 20px;
+
+    img{
+        height: 40px;
+        width: auto;
+        transform: translateY(-6px); //Moves the picture down on the y-axis
+    }
+}
+
+.container{
+    align-content: center;
+    display: block;
+    margin: 0 auto;
+}
