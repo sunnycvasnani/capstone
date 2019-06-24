@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Comments or concerns? Contact Us!</h1>
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="First Name" #first_name>
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Last Name" #last_name>
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Email" #email>
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="Phone Number" #phone>
+
+      <label for="subject">Feedback</label>
+      <textarea id="subject" name="subject" placeholder="Your feedback here!" style="height:200px" #feedback></textarea>
+
+      <button (click)=submitContact(first_name.value,last_name.value,email.value,phone.value,feedback.value)>Submit Form</button>
+  
+    </form>
+  </div>
